@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Input Form Text</h2>
+
+    <form action="">
+        <label for="namadepan">Nama Depan:</label> <br>
+        <input type="text" id="namadepan" name="datanamadepan" value="Rafli" > <br>
+
+        <label for="namabelakang"> Nama Belakang: </label> <br>
+        <input type="text" id="namabelakang" name="datanamabelakang" > <br>
+
+        <input type="submit" value="Kirim">
+    </form>
+
+    <h2>Input Form Radio</h2>
+
+    <form action="">
+        <input type="radio" id="inggris" name="bahasafavorit" value="INGGRIS">
+        <label for="inggris">Bahasa Inggris</label> <br>
+
+        <input type="radio" id="indonesia" name="bahasafavorit" value="INDONESIA">
+        <label for="indonesia">Bahasa Indonesia</label> <br>
+
+        <input type="radio" id="arab" name="bahasafavorit" value="ARAB">
+        <label for="arab">Bahasa Arab</label>
+    </form>
+
+    <h2>Input Form Checkbox</h2>
+
+    <form action="">
+        <input type="checkbox" id="kendaraan1" name="kendaraan1" value="sepeda">
+        <label for="kendaraan1">Sepeda Roda Dua</label> <br>
+
+        <input type="checkbox" id="kendaraan2" name="kendaraan2" value="motor">
+        <label for="kendaraan2">Motor Roda Dua</label> <br>
+
+        <input type="checkbox" id="kendaraan3" name="kendaraan3" value="mobil">
+        <label for="kendaraan3">Mobil Roda Empat</label> <br>
+    </form>
+
+    <h2>Input Select</h2>
+
+    <label for="cars">Pilih Mobil Anda</label>
+    <select name="mobil" id="cars" size="3" multiple>
+        <option value="toyota">Mobil Toyota</option>
+        <option value="bmw">Mobil BMW</option>
+        <option value="ayla" selected>Mobil Ayla</option>
+    </select>
+
+    <h2>Text Area</h2>
+
+    <textarea name="pesan" rows="10" cols="50">
+Ini adalah pesan saya untuk kalian
+    </textarea>
+
+    <button type="button" onclick="alert('Hello World')">Tekan di sini</button>
+
+
+</body>
+</html>
