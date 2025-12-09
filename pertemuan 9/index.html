@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBank - Bank Sampah Digital</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <div id="header-utama">
+        <div class="container">
+            <h1>EcoBank</h1>
+            <p>Bank Sampah Digital Indonesia</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar-custom">
+        <div class="container">
+            <a href="#tentang">Tentang</a>
+            <a href="#jenis-sampah">Kategori</a>
+            <a href="#harga">Harga</a>
+            <a href="#pendaftaran">Daftar</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Section Tentang -->
+        <section id="tentang">
+            <h2 class="section-title">Tentang EcoBank</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=600" 
+                         alt="Recycle" class="img-fluid rounded-custom">
+                </div>
+                <div class="col-md-6">
+                    <p>EcoBank adalah platform bank sampah modern yang membantu mengubah sampah menjadi sumber penghasilan.</p>
+                    <p>Dengan sistem yang mudah dan transparan, kami membantu menciptakan lingkungan yang lebih bersih dan berkelanjutan.</p>
+                    
+                    <div class="info-stats">
+                        <div class="stat-item">
+                            <h3>2,500+</h3>
+                            <p>Nasabah Aktif</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15 Ton</h3>
+                            <p>Sampah/Bulan</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Rp 50Jt</h3>
+                            <p>Transaksi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Kategori Sampah -->
+        <section id="jenis-sampah">
+            <h2 class="section-title">Kategori Sampah</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=500" 
+                         alt="Sampah" class="img-fluid rounded-custom img-float">
+                </div>
+                <div class="col-md-6">
+                    <h4>Pilih Jenis Sampah Anda:</h4>
+                    <form class="radio-form">
+                        <div class="form-radio">
+                            <input type="radio" id="plastik" name="jenis" value="plastik">
+                            <label for="plastik">
+                                <span>🥤</span> Plastik - Botol, gelas, kantong
+                            </label>
+                        </div>
+                        
+                        <div class="form-radio">
+                            <input type="radio" id="kertas" name="jenis" value="kertas">
+                            <label for="kertas">
+                                <span>📄</span> Kertas - Koran, kardus, majalah
+                            </label>
+                        </div>
+                        
+                        <div class="form-radio">
+                            <input type="radio" id="logam" name="jenis" value="logam">
+                            <label for="logam">
+                                <span>🔧</span> Logam - Kaleng, besi, aluminium
+                            </label>
+                        </div>
+                        
+                        <div class="form-radio">
+                            <input type="radio" id="kaca" name="jenis" value="kaca">
+                            <label for="kaca">
+                                <span>🍾</span> Kaca - Botol kaca, pecahan
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Table Harga -->
+        <section id="harga">
+            <h2 class="section-title">Daftar Harga Sampah</h2>
+            
+            <table class="table-custom">
+                <caption>Update: Desember 2024</caption>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th colspan="2">Jenis Sampah</th>
+                        <th>Harga/Kg</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Plastik</td>
+                        <td>Botol Bening</td>
+                        <td>Rp 5.000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Plastik</td>
+                        <td>Botol Warna</td>
+                        <td>Rp 3.000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kertas</td>
+                        <td>Kardus</td>
+                        <td>Rp 2.500</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Kertas</td>
+                        <td>Koran</td>
+                        <td>Rp 2.000</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Logam</td>
+                        <td>Kaleng</td>
+                        <td>Rp 4.000</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Kaca</td>
+                        <td>Botol Kaca</td>
+                        <td>Rp 1.500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Form Pendaftaran -->
+        <section id="pendaftaran">
+            <h2 class="section-title">Pendaftaran Nasabah</h2>
+            
+            <form class="form-custom">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="datanama" placeholder="Masukkan nama lengkap">
+                </div>
+                
+                <div class="form-group">
+                    <label for="alamat">Alamat Lengkap</label>
+                    <input type="text" id="alamat" name="dataalamat" placeholder="Jalan, RT/RW, Kelurahan">
+                </div>
+                
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon</label>
+                    <input type="text" id="telepon" name="datatelepon" placeholder="08xx-xxxx-xxxx">
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Sampah yang Disetor:</label>
+                    <div class="checkbox-wrapper">
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="cb1" name="cb1" value="plastik">
+                            <label for="cb1">Plastik</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="cb2" name="cb2" value="kertas">
+                            <label for="cb2">Kertas</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="cb3" name="cb3" value="logam">
+                            <label for="cb3">Logam</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="cb4" name="cb4" value="kaca">
+                            <label for="cb4">Kaca</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="waktu">Jadwal Setoran</label>
+                    <select name="waktu" id="waktu">
+                        <option value="senin">Senin (09:00 - 12:00)</option>
+                        <option value="rabu" selected>Rabu (09:00 - 12:00)</option>
+                        <option value="jumat">Jumat (09:00 - 12:00)</option>
+                        <option value="sabtu">Sabtu (08:00 - 14:00)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="catatan">Catatan Tambahan</label>
+                    <textarea name="catatan" id="catatan" rows="4" placeholder="Tulis catatan atau pertanyaan..."></textarea>
+                </div>
+
+                <div class="button-wrapper">
+                    <button type="submit" class="btn btn-primary">Daftar Sekarang</button>
+                    <button type="button" class="btn btn-secondary" onclick="alert('Form akan direset!')">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Section Kontak -->
+        <section id="kontak">
+            <h2 class="section-title">Lokasi & Informasi</h2>
+            
+            <div class="row mb-5">
+                <div class="col-md-6 mb-4">
+                    <h4>Lokasi EcoBank</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1234567890!2d106.8123456!3d-6.2345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTQnMDQuNCJTIDEwNsKwNDgnNDQuNCJF!5e0!3m2!1sid!2sid!4v1234567890" 
+                            width="100%" height="300" class="iframe-custom" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <h4>Tutorial Pemilahan Sampah</h4>
+                    <iframe width="100%" height="300" class="iframe-custom"
+                            src="https://www.youtube.com/embed/pWJTybFJ1Fw" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400" class="card-img-top" alt="Recycle">
+                        <div class="card-body">
+                            <h5 class="card-title">Daur Ulang</h5>
+                            <p class="card-text">Sampah terpilah didaur ulang menjadi produk bernilai</p>
+                            <a href="#" class="btn btn-success">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?w=400" class="card-img-top" alt="Community">
+                        <div class="card-body">
+                            <h5 class="card-title">Komunitas</h5>
+                            <p class="card-text">Bergabung dengan ribuan nasabah peduli lingkungan</p>
+                            <a href="#" class="btn btn-success">Bergabung</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?w=400" class="card-img-top" alt="Education">
+                        <div class="card-body">
+                            <h5 class="card-title">Edukasi</h5>
+                            <p class="card-text">Tips dan panduan pengelolaan sampah yang benar</p>
+                            <a href="#" class="btn btn-success">Pelajari</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer-website">
+        <div class="container">
+            <h3>EcoBank Indonesia</h3>
+            <p>Jl. Lingkungan Hijau No. 123, Jakarta Selatan</p>
+            <p>Telp: (021) 1234-5678 | Email: info@ecobank.id</p>
+            <p class="copyright">© 2024 EcoBank Indonesia</p>
+        </div>
+    </footer>
+
+</body>
+</html>
